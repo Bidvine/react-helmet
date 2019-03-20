@@ -2,9 +2,14 @@ language: node_js
 
 node_js:
   - 'node'
+  - 11
+  - 10
   - 8
-  - 7
   - 6
+
+install:
+  - npm i -g npm@^5
+  - npm install
 
 before_install:
   - export CHROME_BIN=chromium-browser
